@@ -18,6 +18,10 @@
 		57FBC5C02AFE5C69007E4DFB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBC5BF2AFE5C69007E4DFB /* Kingfisher */; };
 		57FBC5C32AFE5C89007E4DFB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBC5C22AFE5C89007E4DFB /* RxDataSources */; };
 		57FBC5C62AFE5CE2007E4DFB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBC5C52AFE5CE2007E4DFB /* Alamofire */; };
+		57FBC5CA2AFE5DF3007E4DFB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC5C92AFE5DF3007E4DFB /* BaseView.swift */; };
+		57FBC5CC2AFE6063007E4DFB /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC5CB2AFE6063007E4DFB /* Identifiable.swift */; };
+		57FBC5CE2AFE60A4007E4DFB /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC5CD2AFE60A4007E4DFB /* Base.swift */; };
+		57FBC5D02AFE60BF007E4DFB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC5CF2AFE60BF007E4DFB /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		57FBC5A72AFE5B58007E4DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57FBC5AA2AFE5B58007E4DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57FBC5AC2AFE5B58007E4DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FBC5C92AFE5DF3007E4DFB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		57FBC5CB2AFE6063007E4DFB /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		57FBC5CD2AFE60A4007E4DFB /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		57FBC5CF2AFE60BF007E4DFB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		57FBC59D2AFE5B55007E4DFB /* iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				57FBC5D12AFE60DC007E4DFB /* Base */,
 				57FBC59E2AFE5B55007E4DFB /* AppDelegate.swift */,
 				57FBC5A02AFE5B55007E4DFB /* SceneDelegate.swift */,
 				57FBC5A72AFE5B58007E4DFB /* Assets.xcassets */,
@@ -73,6 +82,17 @@
 				57FBC5AC2AFE5B58007E4DFB /* Info.plist */,
 			);
 			path = iTunes;
+			sourceTree = "<group>";
+		};
+		57FBC5D12AFE60DC007E4DFB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				57FBC5CD2AFE60A4007E4DFB /* Base.swift */,
+				57FBC5C92AFE5DF3007E4DFB /* BaseView.swift */,
+				57FBC5CF2AFE60BF007E4DFB /* BaseViewController.swift */,
+				57FBC5CB2AFE6063007E4DFB /* Identifiable.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FBC5CA2AFE5DF3007E4DFB /* BaseView.swift in Sources */,
+				57FBC5CC2AFE6063007E4DFB /* Identifiable.swift in Sources */,
+				57FBC5CE2AFE60A4007E4DFB /* Base.swift in Sources */,
 				57FBC59F2AFE5B55007E4DFB /* AppDelegate.swift in Sources */,
 				57FBC5A12AFE5B55007E4DFB /* SceneDelegate.swift in Sources */,
+				57FBC5D02AFE60BF007E4DFB /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

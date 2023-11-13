@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxCocoa
+import RxDataSources
+import RxSwift
 
 final class SearchViewController: BaseViewController {
     lazy var searchController = {
@@ -21,13 +24,24 @@ final class SearchViewController: BaseViewController {
         return view
     }()
 
+    let viewModel = SearchViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        bind()
+
+        APIManager.shared.request()
 
     }
 
     func bind() {
+        let input = SearchViewModel.Input()
+        let output = viewModel.transform(input: input)
 
+//        let dataSource = RxTableViewSectionedReloadDataSource { TableViewSectionedDataSource<SectionModelType>, <#UITableView#>, <#IndexPath#>, <#SectionModelType.Item#> in
+//            <#code#>
+//        }
     }
 
     override func initialAttributes() {
